@@ -65,7 +65,7 @@ def find_similar_jobs(filtered_df, search_text):
 # emojis: https://www.webfx.com/tools/emoji-cheat-sheet/
 # streamlit emojis: https://streamlit-emoji-shortcodes-streamlit-app-gwckff.streamlit.app/
 # get icons at Bootstap Icons:  https://icons.getbootstrap.com/
-st.set_page_config(page_title="Job Market", page_icon=":bar_chart:", layout="wide")
+st.set_page_config(page_title="What-The-Job", page_icon=":compass:", layout="wide")
 
 # ---- SIDEBAR ----
 st.sidebar.header("Please Filter Here: :mag:")
