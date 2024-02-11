@@ -1,7 +1,7 @@
 pandas==2.1.2
 numpy==1.26.2
-re==2.2.1
-json==2.0.9
+re
+json
 langdetect
 bs4
 googletrans
