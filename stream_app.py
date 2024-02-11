@@ -643,9 +643,7 @@ if selected_menu == 'Home':
             skill_chart_last_index = 5
             plot_values = list(skills_to_sort.sort_values(by=['Total'], ascending = False)['Total'])
             plot_labels = list(skills_to_sort.sort_values(by=['Total'], ascending = False)['Skill Name'])
-            max_label_char = 18
-            plot_labels = [(l[:max_label_char]+'...') if (len(l) > max_label_char) else l for l in plot_labels]
-
+            
             col1, col2, col3 = st.columns(3)
 
             with col2:
