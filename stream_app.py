@@ -20,13 +20,13 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 import plotly.express as px 
 import matplotlib.pyplot as plt
-from wordcloud import WordCloud, STOPWORDS, ImageColorGenerator
+# from wordcloud import WordCloud, STOPWORDS, ImageColorGenerator
 
 import streamlit as st 
 from streamlit_option_menu import option_menu
 from streamlit_pills import pills
-from streamlit_card import card
-from textwrap import wrap
+# from streamlit_card import card
+# from textwrap import wrap
 
 df_jobs = pd.read_excel('linkedin_job_details.xlsx')
 df_jobs = df_jobs.drop(['Unnamed: 0'], axis=1)
@@ -214,6 +214,7 @@ with st.expander(label='''
 
     st.markdown('##')
     st.markdown(show_text_card(label = 'Developer note', font_weight='normal', font_size='14px', line_spacing=0.5), unsafe_allow_html=True)
+    st.markdown(show_text_card(label = 'This app was developed independently', font_weight='normal', font_size='14px', line_spacing=0.5), unsafe_allow_html=True)
     st.markdown(show_text_card(label = '- Developed by: Naim Zahari', font_weight='normal', font_size='14px', line_spacing=0.5), unsafe_allow_html=True)
     st.markdown(show_text_card(label = '- Based in Berlin, Germany', font_weight='normal', font_size='14px', line_spacing=0.5), unsafe_allow_html=True)
     linked_profile_display = f'<a href = "https://www.linkedin.com/in/naimiskandar22/"><p style="color:grey; font-size: 14px; text-decoration:none; line-height:0.5">:link: Find me on LinkedIn</p></a>'
