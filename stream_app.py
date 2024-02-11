@@ -146,15 +146,81 @@ if selected_jobs.empty:
     st.warning("No data available based on the current filter settings!")
     st.stop() # This will halt the app from further execution.
 
+def show_text_card(label = '', font_size = '18px', alignment = 'left', color = 'white', font_weight = 'normal', line_spacing = '1.0'):
+        text_card_display = f'''
+                <p style="color:{color}; font-size: {font_size}; font-weight: {font_weight}; text-decoration:none; text-align: {alignment}; line-height:{line_spacing}">{label}</p>
+        
+        '''
+        return text_card_display
 
 # ---- MAINPAGE ----
 st.title(":bar_chart: Job Market")
 st.markdown("##")
 
-with st.expander(label='About'):
-    st.write('Write About section here')
+about_title_label = 'About'
+about_title_color = 'grey'
+about_title_font_size = '28px'
+about_title_font_weight = 'bold' 
 
-st.markdown("""---""")
+about_title_display = f'''
+        <p style="color:{about_title_color}; font-size: {about_title_font_size}; font-weight: {about_title_font_weight}; text-decoration:none;">{about_title_label}</p>
+    '''
+
+about_color = 'grey'
+about_font_size = '28px'
+about_font_weight = 'bold' 
+about_label_header = '''
+            Ever wondered what skills are in demand for your dream role? Or maybe, you want to future-proof your career by getting upskilled for the next big role.
+            '''
+about_label = '''
+            This app aims to help find the top skills that are needed for the dream job and leverage the takeaway to update resumes when it's time to make the career leap.\n
+            '''
+
+instruction_label_header = '''
+                    How to use the app
+                    '''
+instruction_label = '''
+                    1. Enter a key phrase to find a particular job
+                    '''
+
+with st.expander(label='''
+                 -- About                                                                     -
+                 ''', expanded=False):
+    # about_col1, about_col2 = st.columns(2)
+    # with about_col1:
+    st.markdown(show_text_card(label = about_label_header, font_weight='bold', font_size='20px'), unsafe_allow_html=True)
+    # st.markdown('##')
+    st.markdown(show_text_card(label = about_label, font_weight='normal', font_size='14px'), unsafe_allow_html=True)
+    about_label = '''
+            1. Find the top job titles in companies of your choice
+            '''
+    st.markdown(show_text_card(label = about_label, font_weight='normal', font_size='14px', line_spacing=0.5), unsafe_allow_html=True)
+    about_label = '''
+            2. Find out what skills are highly in-demand in a specialized industry
+            '''
+    st.markdown(show_text_card(label = about_label, font_weight='normal', font_size='14px', line_spacing=0.5), unsafe_allow_html=True)
+    about_label = '''
+            3. Find out which area of expertise to upskill before applying for a senior role
+            '''
+    st.markdown(show_text_card(label = about_label, font_weight='normal', font_size='14px', line_spacing=0.5), unsafe_allow_html=True)
+    
+    st.markdown('##')
+    st.markdown(show_text_card(label = instruction_label_header, font_weight='bold', font_size='20px'), unsafe_allow_html=True)
+    st.markdown(show_text_card(label = instruction_label, font_weight='normal', font_size='14px', line_spacing=0.5), unsafe_allow_html=True)
+    instruction_label = '''
+                    2. Filter by location, job title, company, experience level, work setting, and even language of job description
+                    '''
+    st.markdown(show_text_card(label = instruction_label, font_weight='normal', font_size='14px', line_spacing=0.5), unsafe_allow_html=True)
+
+    st.markdown('##')
+    st.markdown(show_text_card(label = 'Developer note', font_weight='normal', font_size='14px', line_spacing=0.5), unsafe_allow_html=True)
+    st.markdown(show_text_card(label = '- Developed by: Naim Zahari', font_weight='normal', font_size='14px', line_spacing=0.5), unsafe_allow_html=True)
+    st.markdown(show_text_card(label = '- Based in Berlin, Germany', font_weight='normal', font_size='14px', line_spacing=0.5), unsafe_allow_html=True)
+    linked_profile_display = f'<a href = "https://www.linkedin.com/in/naimiskandar22/"><p style="color:grey; font-size: 14px; text-decoration:none; line-height:0.5">:link: Find me on LinkedIn</p></a>'
+    st.markdown(linked_profile_display, unsafe_allow_html=True)
+    # st.markdown(body=''':link:[Find me on LinkedIn] (https://www.linkedin.com/in/naimiskandar22/)''')
+
+st.markdown("##")
 
 # horizontal menu
 # get icons at Bootstap Icons:  https://icons.getbootstrap.com/
@@ -287,15 +353,9 @@ for skill in skills:
 
 st.markdown("""---""")
 
-def show_text_card(label = '', font_size = '18px', alignment = 'left', color = 'white', font_weight = 'normal', line_spacing = '1.0'):
-        text_card_display = f'''
-                <p style="color:{color}; font-size: {font_size}; font-weight: {font_weight}; text-decoration:none; text-align: {alignment}; line-height:{line_spacing}">{label}</p>
-        
-        '''
-        return text_card_display
-
 if selected_menu == 'Home':
-    # st.title('Home')
+    st.title('Home')
+    st.markdown('##')
 
     # Top scorecards
     col1, col2, col3 = st.columns(3)
@@ -630,7 +690,8 @@ if selected_menu == 'Home':
                 pills(label = "Skills", options = list(skills_to_sort.sort_values(by=['Total'], ascending = False)['Skill Name'])[:max_len], clearable= True)
 
 elif selected_menu == 'Job Posts':
-    # st.title('Projects')
+    st.title('Job Posts')
+    st.markdown('##')
 
     cards_limit = 30
     curr_card = 0
