@@ -33,21 +33,23 @@
 
 ## UML Diagrams
 
- UML Use Case Diagram
+<details>
+ <summary> UML Use Case Diagram </summary>
 ![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/c565c5cd-e135-49e6-9145-c67f319c7d08)
 
 UML Class Diagram
 ![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/9632c844-9645-4dd4-a9b9-10def5806eed)
 
+</details>
+
 ## Domain Driven Design (DDD)
 
-# Core Domain
+## Core Domain
 
 To fulfill the main objective of the project, the most common job titles and associated job skills to job posts are primary indications to measure the benchmarks for generalized or specialized job options. A relatively substantial amount of records would provide an insightful overview of the job market and LinkedIn is a resourceful platform to gather information on available work at a given time. 
 
 ![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/f7528319-654e-4311-8422-2691e584e2e8)
 
-![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/a979c10d-27ba-45e4-ad66-1f123f709793)
 
 
 
