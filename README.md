@@ -22,7 +22,7 @@ You can add an image or a code block, too.
 </details>
 
 <details> 
- <summary> Website gallery
+ <summary> Website gallery </summary>
 
 
  ![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/698d6be5-139a-4914-a6e1-57206e4ce92b) 
