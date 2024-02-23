@@ -8,12 +8,14 @@
 <details> 
  <summary> Website gallery </summary>
 
+ ## Website Front Page: Analysis
  ![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/698d6be5-139a-4914-a6e1-57206e4ce92b) 
  ![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/1f69322c-cd95-4274-99e4-2243ddf5a98b) 
  ![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/bcfd162e-113e-4ffa-bc0f-8ff4c2c62ddc)
  ![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/908e09ae-3068-4427-a4bd-9eb27b3d66ad)
  ![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/21ad1592-25c0-4170-afe7-3312d9f23da8)
  ![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/975bba4e-2b50-4e07-a31f-15672de399ea)
+ ## Page: LinkedIn Job Posts
  ![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/42d5d5dd-bbcc-49fb-93a8-05de8de70fce)
 
 </details>
