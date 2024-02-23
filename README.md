@@ -5,25 +5,8 @@
 - Published on Streamlit Community Server
 - Website at https://career-top-skills-nz.streamlit.app/
 
-<details>
-
-<summary>Tips for collapsed sections</summary>
-
-### You can add a header
-
-You can add text within a collapsed section. 
-
-You can add an image or a code block, too.
-
-```ruby
-   puts "Hello World"
-```
-
-</details>
-
 <details> 
  <summary> Website gallery </summary>
-
 
  ![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/698d6be5-139a-4914-a6e1-57206e4ce92b) 
  ![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/1f69322c-cd95-4274-99e4-2243ddf5a98b) 
