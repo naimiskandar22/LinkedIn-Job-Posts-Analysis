@@ -34,7 +34,9 @@
 ## UML Diagrams
 
 <details>
- <summary> UML Use Case Diagram </summary>
+ <summary> UML Diagrams </summary>
+
+UML Use Case Diagram
 ![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/c565c5cd-e135-49e6-9145-c67f319c7d08)
 
 UML Class Diagram
