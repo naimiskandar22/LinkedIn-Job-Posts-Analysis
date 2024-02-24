@@ -187,9 +187,9 @@ Clean codes and general best practices are foundational to the project lifecycle
 
 To 
 
-<details_ccc> 
+<details> 
  <summary> Example 1 </summary>
-</details_ccc>
+</details>
 
 <details_ccc> 
  <summary> Example 1 </summary>
