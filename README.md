@@ -9,7 +9,7 @@
 <details> 
  <summary> Website gallery </summary>
 
- ## Website Front Page: Analysis
+ ## Website Front Page: Home
  ![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/698d6be5-139a-4914-a6e1-57206e4ce92b) 
  ![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/1f69322c-cd95-4274-99e4-2243ddf5a98b) 
  ![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/bcfd162e-113e-4ffa-bc0f-8ff4c2c62ddc)
@@ -112,6 +112,7 @@ The feature to display the insights mentioned multiple times on a published webs
 - Top skills associated to the job posts
 - Determine unlisted skills on the posts but were mentioned in the job description
 - Extensive filter options on the website
+- 
 
 While the core feature is fundamental to the website, there are opportunities for further features that could be developed to enrich the website. Referring to an illustration from the DDD-crew, secondary features can be organized into different quadrants of viability to determine the impact and measured against the cost of the development. As elegantly illustrated in the picture below, features grouped as the Low Hanging Fruit on the bottom right box would provide the best return-on-investment (ROI) whereas the grey box on the top left is the least lucrative feature to develop.
 
@@ -140,3 +141,70 @@ Future expansions can be considered to provide higher value for the website. How
 
 </details>
 
+<details>
+
+ <summary> Ubiquitous Language </summary>
+
+In the Domain-Driven Design process, ubiquitous language helps to align the relevant individuals in getting familiarized with the common terminologies used for the project development and getting a common understanding on the terminologies used in the project lifecycle.
+
+The main terminologies and the description in the project are as follows:
+- <b>Home Page</b>: Front page of the website where the insights are shown
+- <b>Job Posts Page</b>: Second page of the website that shows the list of job posts gathered on LinkedIn
+- <b>Top Job Title</b>: 3 most common job titles in the analysis output
+- <b>Top Companies</b>: 3 most common companies in the analysis output
+- <b>Top Industries</b>: 3 most common industries in the analysis output
+- <b>Top Experience Levels</b>: 3 most common experience levels in the analysis output
+- <b>Top Skills</b>: 3 most common associated skills to the jobs in the analysis output
+- <b>Remote Work Options</b>: Remote options in the LinkedIn filter options. The listed options found on LinkedIn are On-site, Hybrid and Remote
+- <b>Experience Levels</b>: Assigned experience level for the job posts on LinkedIn and is among one of the filter parameters. The listed experience levels found on LinkedIn include Entry level, Mid-Senior level, Internship, Contract, Part-time and Director
+
+</details>
+
+## Metrics
+
+<details>
+
+ <summary> Metrics </summary>
+
+
+
+
+</details>
+
+## Clean Code Development
+
+<details>
+
+ <summary> Explanation </summary>
+
+Clean codes and general best practices are foundational to the project lifecycle, as easily readable codes are critical in facilitating or orchestrating continuous development of feature expansion. In that spirit, areas such as clear naming, unrepetitive functions and concise comments are included in the development code to allow changes when improvements are called for and to demonstrate the awareness of clean code development.
+
+</details>
+
+<details>
+
+ <summary> Examples </summary>
+
+To 
+
+<details_ccc> 
+ <summary> Example 1 </summary>
+</details_ccc>
+
+<details_ccc> 
+ <summary> Example 1 </summary>
+</details_ccc>
+
+<details_ccc> 
+ <summary> Example 1 </summary>
+</details_ccc>
+
+<details_ccc> 
+ <summary> Example 1 </summary>
+</details_ccc>
+
+<details_ccc> 
+ <summary> Example 1 </summary>
+</details_ccc>
+
+</details>
