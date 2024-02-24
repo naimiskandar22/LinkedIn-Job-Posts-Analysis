@@ -115,7 +115,15 @@ The feature to display the insights mentioned multiple times on a published webs
 
 While the core feature is fundamental to the website, there are opportunities for further features that could be developed to enrich the website. Referring to an illustration from the DDD-crew, secondary features can be organized into different quadrants of viability to determine the impact and measured against the cost of the development. As elegantly illustrated in the picture below, features grouped as the Low Hanging Fruit on the bottom right box would provide the best return-on-investment (ROI) whereas the grey box on the top left is the least lucrative feature to develop.
 
-![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/0de70b7a-e7da-4865-a37c-10db090ee799)
+![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/d9d9c199-1d2a-45a5-b520-950817e2db77)
+
+Future expansions can be considered to provide higher value for the website. However, the impediments should always be considered to measure the potential ROI and committing to the feature development. Hence, the groupings can be described as follows:
+
+<b>Low Hanging fruit</b>
+1. Trend Analysis
+   - Advantage: Showing the highly demanded job titles and skills over time
+   - Disadvantage: No significant obstructions, as this feature requires expanding upon the available analysis on the website
+
 
 
 
