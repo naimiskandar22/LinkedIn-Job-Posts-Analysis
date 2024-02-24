@@ -5,6 +5,7 @@
 - Published on Streamlit Community Server
 - Website at https://career-top-skills-nz.streamlit.app/
 
+### Gallery
 <details> 
  <summary> Website gallery </summary>
 
