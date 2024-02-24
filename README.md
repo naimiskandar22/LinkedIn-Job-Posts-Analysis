@@ -119,12 +119,23 @@ While the core feature is fundamental to the website, there are opportunities fo
 
 Future expansions can be considered to provide higher value for the website. However, the impediments should always be considered to measure the potential ROI and committing to the feature development. Hence, the groupings can be described as follows:
 
-<b>Low Hanging fruit</b>
+<b>Low Hanging Fruit</b>
 1. Trend Analysis
    - Advantage: Showing the highly demanded job titles and skills over time
    - Disadvantage: No significant obstructions, as this feature requires expanding upon the available analysis on the website
 
+<b>Risk Averse</b>
+1. Recommendation Chatbot
+   - Advantage: It provides narrower or more relevant sorted searched jobs for users
+   - Disadvantage: Could be computationally costly for the website, and broader or expansive data would be needed to drive maximum value
+2. Forecasting Model
+   - Advantage: Forecasting highly demanded jobs and skills for future jobs in the market
+   - Disadvantage: Accuracy in forecasting model may be skewed when broader data is not available for model training
 
+<b>Last Toothpaste in the Tube</b>
+1. Automated Data Fetch
+   - Advantage: Broader data can be obtained automatically for long-term period with minimal manual process
+   - Disadvantage: LinkedIn has intuitive countermeasures to prevent suspected web crawlers or robots from fetching data on the platform, and there is no job posts API available to free users
 
 
 </details>
