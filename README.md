@@ -112,7 +112,7 @@ The feature to display the insights mentioned multiple times on a published webs
 - Top skills associated to the job posts
 - Determine unlisted skills on the posts but were mentioned in the job description
 - Extensive filter options on the website
-- 
+- Text recommender by keyword search with scikit-learn's TFIDF
 
 While the core feature is fundamental to the website, there are opportunities for further features that could be developed to enrich the website. Referring to an illustration from the DDD-crew, secondary features can be organized into different quadrants of viability to determine the impact and measured against the cost of the development. As elegantly illustrated in the picture below, features grouped as the Low Hanging Fruit on the bottom right box would provide the best return-on-investment (ROI) whereas the grey box on the top left is the least lucrative feature to develop.
 
@@ -178,6 +178,17 @@ The main terminologies and the description in the project are as follows:
  <summary> Explanation </summary>
 
 Clean codes and general best practices are foundational to the project lifecycle, as easily readable codes are critical in facilitating or orchestrating continuous development of feature expansion. In that spirit, areas such as clear naming, unrepetitive functions and concise comments are included in the development code to allow changes when improvements are called for and to demonstrate the awareness of clean code development.
+
+</details>
+
+<details>
+
+ <summary> General Practice </summary>
+
+ - <b>Naming Variables and Functions</b>: Variables and functions have to be named concisely and appropriately.
+   - Booleans: If any, boolean variables would be named with the prefix 'is', and followed by the purpose of the variable. For example, is_home_selected or is_done
+ - <b>Variable Naming Convention</b>: Naming convention of variables use snake case. Snake case (stylized as snake_case) is the naming convention in which each space is replaced with an underscore (_) character, and words are written in lowercase. For example, files_df and files_df_columns
+ - <b>Function Naming Convention</b>: Naming convention of variables use pascal case. Pascal case is a naming convention where the first letter in every word is capitalized and the rest is in lowercase. For example, GetJobPostingID() and GetJobTitle()
 
 </details>
 
