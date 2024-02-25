@@ -58,27 +58,27 @@ The domain model illustrates the entities relevant to the end-to-end process fro
 ![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/429ef382-a869-455f-b397-3d8971b9f888)
 
 As stated in the one of the challenges, LinkedIn takes measures to make web scraping difficult and inaccessible to web crawler agents. Nevertheless, Job posts on LinkedIn have similar patterns to how text information are shown and the text information can be obtained as long as the right serialized identification classes are determined. The information can be gathered for the following entities:
-<summary>1. Source platform (LinkedIn)</summary>
-   a. Job ID
-   b. Post url link
-   c. Reposted
-   d. List status
-   e. Company ID
+1. Source platform (LinkedIn)
+ - Job ID
+ - Post url link
+ - Reposted
+ - List status
+ - Company ID
 2. Job details
-   a. Job title
-   b. Job description
-   c. Language
-   d. Experience level
-   e. Location
-   f. Industry
-   g. Employment type
-   h. Associated skills
+ - Job title
+ - Job description
+ - Language
+ - Experience level
+ - Location
+ - Industry
+ - Employment type
+ - Associated skills
 3. Company
-   a. Company name
-   b. Company page link
-   c. Industry
-   d. Company size
-   e. Company description
+ - Company name
+ - Company page link
+ - Industry
+ - Company size
+ - Company description
 
 </details>
 
