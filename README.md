@@ -281,3 +281,50 @@ When the notebook cells with the <b>assert</b> keyword run successfully, the tes
 
 
 </details>
+
+## Continuous Delivery
+
+<details>
+
+ <summary> Explanation </summary>
+
+
+</details>
+
+## IDE
+
+<details>
+
+ <summary> Explanation </summary>
+
+
+</details>
+
+
+## DSL
+
+<details>
+
+ <summary> Explanation </summary>
+
+
+</details>
+
+
+## Functional Programming
+
+<details>
+
+ <summary> Explanation </summary>
+
+The final data structure is defined and stored in a dataframe. Once the data has been processed and stored in a dataframe, the dataframe will be saved in an excel file. Hence, defining the dataframe columns and the required information are fundamental to the project outcome. As mentioned in the Clean Code Development general practice, functions with parameters and return values are critical to processing the required information with little room for hard-coded solutions. Regardless of the outcome of the implemented functions in the code, the code should persist and run successfully.
+
+Refer to the screenshots below for the defined dataframes to be stored in excel files.
+
+### Job Details Structure
+![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/ffca5c50-5bcc-446b-8b82-2571c384c774)
+### Top Skills Structure
+![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/ffdcda45-9514-434a-a58a-c49bb06695b2)
+
+
+</details>
