@@ -187,8 +187,13 @@ Clean codes and general best practices are foundational to the project lifecycle
 
  - <b>Naming Variables and Functions</b>: Variables and functions have to be named concisely and appropriately.
    - Booleans: If any, boolean variables would be named with the prefix 'is', and followed by the purpose of the variable. For example, is_home_selected or is_done
+   - Strings and Float (Numeric): If any, variables are named in singular form and the naming should be concise.
+   - Lists and Dataframes: Variables are named in plural form
  - <b>Variable Naming Convention</b>: Naming convention of variables use snake case. Snake case (stylized as snake_case) is the naming convention in which each space is replaced with an underscore (_) character, and words are written in lowercase. For example, files_df and files_df_columns
  - <b>Function Naming Convention</b>: Naming convention of variables use pascal case. Pascal case is a naming convention where the first letter in every word is capitalized and the rest is in lowercase. For example, GetJobPostingID() and GetJobTitle()
+ - <b>Unique Naming</b>: Definitions of new variables and functions should be named appropriately. Each variable should be used for specific purposes and there should not be more than 1 uses for specified variables. However, the variable values can be freely modified
+ - <b>Comments</b>: Comments added are used to provide a clear descriptions. When necessary, comments should be included directly above the definitions of variables or functions.
+ - <b>Functional Programming</b>: Identify instances where hard-coding can be avoided as much as possible. Rather than using hard-coded solutions, build functions to compute the solutions from identifiable patterns and return results with no side effects. If results cannot be found, return null and allow the code to move forward without being impeded.
 
 </details>
 
@@ -196,26 +201,57 @@ Clean codes and general best practices are foundational to the project lifecycle
 
  <summary> Examples </summary>
 
-To 
+Find the examples of clean code development below.
 
 <details> 
  <summary> Example 1 </summary>
+
+Use case: Including comments to describe functions
+Source file: job_analysis.ipynb
+
+![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/e84c78bc-2c25-4bc2-893d-3f22c9d52731)
+
+ 
 </details>
 
 <details> 
  <summary> Example 2 </summary>
+
+ Use case: Naming convention of functions (Pascal Case)
+ Source file: job_analysis.ipynb
+
+ ![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/e84c78bc-2c25-4bc2-893d-3f22c9d52731)
+
 </details>
 
 <details> 
  <summary> Example 3 </summary>
+ 
+ Use case: Naming convention of list and dataframe (Snake Case)
+ Source file: job_analysis.ipynb
+
+ ![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/8322c6be-4bd3-498d-9ae7-32d1c1ce16f5)
+ 
 </details>
 
 <details> 
  <summary> Example 4 </summary>
+ 
+ Use case: Functional programming, where a function is defined with parameters and returning value(s). If the attempt to get value(s) is unsuccessful, return null and the rest of the code still persists
+ Source file: job_analysis.ipynb
+
+ ![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/67c56a80-62df-4dac-b966-9e9d51fb9ff6)
+
 </details>
 
 <details> 
  <summary> Example 5 </summary>
+ 
+ Use case: List and dataframe variables are given unique namings. Besides that, the namings are concise and appropriate to the specific purposes.
+ Source file: job_analysis.ipynb
+
+ ![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/e4e4ef75-2a34-470a-84fa-990fe89b9f88)
+
 </details>
 
 </details>
@@ -227,6 +263,21 @@ To
  <summary> Metrics </summary>
 
 
+
+
+</details>
+
+## Unit Tests
+
+<details>
+
+ <summary> Explanation </summary>
+
+In the jobs_analysis_test.ipynb file, the Python <mark>assert</mark> keyword is used to test if the function returns an expected value. Referring to the screenshot below, the <mark>id_key</mark> is hard-coded to get the job title in the post from the HTML text. However, the <mark>id_key</mark> in other job post pages on LinkedIn are arbitrary and applying the <mark>id_key</mark> manually is not acceptable. With the earlier defined function <mark>diveHtmlTags()</mark>, the job title can be obtained regardless of the arbitrary <mark>id_key</mark>. The same solution applies to obtain the other information on LinkedIn Job Post pages.
+
+When the notebook cells with the <mark>assert</mark> keyword run successfully, the tests are successful and no <mark>AssertionError</mark> are triggered.
+
+![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/0090c8b6-6a59-4bdc-b32a-3771e94bbda9)
 
 
 </details>
