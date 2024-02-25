@@ -273,7 +273,7 @@ Source file: job_analysis.ipynb
 
  <summary> Explanation </summary>
 
-In the jobs_analysis_test.ipynb file, the Python <mark>assert</mark> keyword is used to test if the function returns an expected value. Referring to the screenshot below, the <mark>id_key</mark> is hard-coded to get the job title in the post from the HTML text. However, the <mark>id_key</mark> in other job post pages on LinkedIn are arbitrary and applying the <mark>id_key</mark> manually is not acceptable. With the earlier defined function <mark>diveHtmlTags()</mark>, the job title can be obtained regardless of the arbitrary <mark>id_key</mark>. The same solution applies to obtain the other information on LinkedIn Job Post pages.
+In the jobs_analysis_test.ipynb file, the Python <span style="background-color: #FFFF00">assert</span> keyword is used to test if the function returns an expected value. Referring to the screenshot below, the <mark>id_key</mark> is hard-coded to get the job title in the post from the HTML text. However, the <mark>id_key</mark> in other job post pages on LinkedIn are arbitrary and applying the <mark>id_key</mark> manually is not acceptable. With the earlier defined function <mark>diveHtmlTags()</mark>, the job title can be obtained regardless of the arbitrary <mark>id_key</mark>. The same solution applies to obtain the other information on LinkedIn Job Post pages.
 
 When the notebook cells with the <mark>assert</mark> keyword run successfully, the tests are successful and no <mark>AssertionError</mark> are triggered.
 
