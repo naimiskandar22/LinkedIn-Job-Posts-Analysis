@@ -2,7 +2,8 @@ pandas==2.1.2
 numpy==1.26.2
 langdetect
 bs4
-googletrans
+googletrans==4.0.0-rc1
+httpcore==0.15.0
 openpyxl
 streamlit==1.31.0
 scikit-learn
