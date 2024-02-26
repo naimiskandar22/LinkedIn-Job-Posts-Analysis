@@ -293,6 +293,48 @@ When the notebook cells with the <b>assert</b> keyword run successfully, the tes
 
  <summary> Explanation </summary>
 
+ A Github Actions workflow is used to manage Python packages in an Anaconda environment and run the notebook in a test environment when new changes are pushed into the repository. 
+
+ ### Workflow Configuration
+
+ - Add a new workflow in Github Actions and select a suggested workflow to start with a pre-defined workflow configuration
+
+![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/4f0d4428-3be3-4c0e-a89a-ea3cb8d3f01f)
+
+ - In the pre-defined workflow configuration file, set the following settings:
+   - <b>on: [push]</b>
+   - <b>python-version: '3.9.13'</b>
+   - <b>- name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt</b>
+
+  The settings would allow the workflow to trigger when:
+   - New changes are pushed into the repository
+   - Set python version to '3.9.13' by default
+   - Run installation for dependencies from requirements.txt file and install pip in the workflow test environment
+
+ ![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/96cb03f1-55fe-4b4f-9811-442c13c7f5cc)
+
+ - To avoid errors caused by absence of pytest functions, comment the following lines:
+   - <b> Bypassing pytest step
+         - name: Test with pytest
+           run: |
+             pytest </b>
+ - To run the jupyter notebook with Python assert keywords, add the following lines in the workflow file
+   - <b>- name: Install Jupyter Notebook
+      run: |
+          python -m pip install jupyter
+       - name: Execute Jupyter Notebook
+         run: jupyter execute jobs_analysis_test.ipynb
+         shell: bash</b>
+  ![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/ad512d8b-513a-4e32-ac83-90ccc580dc23)
+
+  - Finally, commit changes to save the workflow in the repository
+
+
+ ![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/dc6075d2-ce7d-402a-9061-f98058b09d12)
+
 
 </details>
 
