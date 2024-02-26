@@ -2,6 +2,7 @@ pandas==2.1.2
 numpy==1.26.2
 langdetect
 bs4
+lxml
 googletrans
 httpcore
 httpx
