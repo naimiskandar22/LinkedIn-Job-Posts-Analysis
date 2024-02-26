@@ -3,7 +3,7 @@ numpy==1.26.2
 langdetect
 bs4
 googletrans==4.0.0-rc1
-httpcore==0.15.0
+httpcore==0.15.0 httpx pymongo googletrans
 openpyxl
 streamlit==1.31.0
 scikit-learn
