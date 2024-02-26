@@ -208,7 +208,7 @@ Find the examples of clean code development below.
 
  - Use case: Including comments to describe functions
  - Source file: job_analysis.ipynb
- - Path to file: jobs_analysis.ipynb
+ - Path to file: [jobs_analysis.ipynb](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/blob/bd5edd41bcacc07cbea49b43f769ee8b1591db1e/jobs_analysis.ipynb)
 
 ![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/e84c78bc-2c25-4bc2-893d-3f22c9d52731)
 
@@ -220,7 +220,7 @@ Find the examples of clean code development below.
 
  - Use case: Naming convention of functions (Pascal Case)
  - Source file: job_analysis.ipynb
- - Path to file: jobs_analysis.ipynb
+ - Path to file: [jobs_analysis.ipynb](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/blob/bd5edd41bcacc07cbea49b43f769ee8b1591db1e/jobs_analysis.ipynb)
 
  ![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/e84c78bc-2c25-4bc2-893d-3f22c9d52731)
 
@@ -231,7 +231,7 @@ Find the examples of clean code development below.
  
   - Use case: Naming convention of list and dataframe (Snake Case)
   - Source file: job_analysis.ipynb
-  - Path to file: jobs_analysis.ipynb
+  - Path to file: [jobs_analysis.ipynb](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/blob/bd5edd41bcacc07cbea49b43f769ee8b1591db1e/jobs_analysis.ipynb)
 
  ![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/8322c6be-4bd3-498d-9ae7-32d1c1ce16f5)
  
@@ -242,7 +242,7 @@ Find the examples of clean code development below.
  
   - Use case: Functional programming, where a function is defined with parameters and returning value(s). If the attempt to get value(s) is unsuccessful, return null and the rest of the code still persists
   - Source file: job_analysis.ipynb
-  - Path to file: jobs_analysis.ipynb
+  - Path to file: [jobs_analysis.ipynb](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/blob/bd5edd41bcacc07cbea49b43f769ee8b1591db1e/jobs_analysis.ipynb)
 
  ![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/67c56a80-62df-4dac-b966-9e9d51fb9ff6)
 
@@ -253,7 +253,7 @@ Find the examples of clean code development below.
  
   - Use case: List and dataframe variables are given unique namings. Besides that, the namings are concise and appropriate to the specific purposes.
   - Source file: job_analysis.ipynb
-  - Path to file: jobs_analysis.ipynb
+  - Path to file: [jobs_analysis.ipynb](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/blob/bd5edd41bcacc07cbea49b43f769ee8b1591db1e/jobs_analysis.ipynb)
 
  ![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/e4e4ef75-2a34-470a-84fa-990fe89b9f88)
 
