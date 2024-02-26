@@ -318,14 +318,14 @@ When the notebook cells with the <b>assert</b> keyword run successfully, the tes
 
  - To avoid errors caused by absence of pytest functions, comment the following lines:
    - <b> Bypassing pytest step
-         - name: Test with pytest
+           name: Test with pytest
            run: |
              pytest </b>
  - To run the jupyter notebook with Python assert keywords, add the following lines in the workflow file
-   - <b>- name: Install Jupyter Notebook
-      run: |
-          python -m pip install jupyter
-       - name: Execute Jupyter Notebook
+   - <b> name: Install Jupyter Notebook
+         run: |
+             python -m pip install jupyter</b>
+     <b> name: Execute Jupyter Notebook
          run: jupyter execute jobs_analysis_test.ipynb
          shell: bash</b>
   ![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/ad512d8b-513a-4e32-ac83-90ccc580dc23)
