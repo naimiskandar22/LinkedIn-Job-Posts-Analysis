@@ -164,10 +164,15 @@ The main terminologies and the description in the project are as follows:
 
 <details>
 
- <summary> Metrics </summary>
+ <summary> Explanation </summary>
 
+Sonarcloud is used to review code when new changes are pushed into the repository. Upon connecting the Github repository to the Sonarcloud platform, Sonarcloud can measure the code cleanliness and indicate the code quality throughout the project lifecycle. Observe the screenshot below for the indicated metrics on Sonarcloud. The metrics are as follows:
+- Reliability: Showing the number of bugs in the code
+- Security: Showing vulnerabilities in the code
+- Maintainability: Showing that technical debt ratio in the code
+- Duplications: Showing number of identical lines of code
 
-
+![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/a882fbf6-2038-40c8-ba26-d8f6d6af2eec)
 
 </details>
 
@@ -304,10 +309,10 @@ When the notebook cells with the <b>assert</b> keyword run successfully, the tes
  - In the pre-defined workflow configuration file, set the following settings:
    - <b>on: [push]</b>
    - <b>python-version: '3.9.13'</b>
-   - <b>- name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install -r requirements.txt</b>
+   - <b>name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt</b>
 
   The settings would allow the workflow to trigger when:
    - New changes are pushed into the repository
@@ -325,16 +330,16 @@ When the notebook cells with the <b>assert</b> keyword run successfully, the tes
    - <b> name: Install Jupyter Notebook
          run: |
              python -m pip install jupyter</b>
-     <b> name: Execute Jupyter Notebook
+   - <b> name: Execute Jupyter Notebook
          run: jupyter execute jobs_analysis_test.ipynb
          shell: bash</b>
   ![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/ad512d8b-513a-4e32-ac83-90ccc580dc23)
 
   - Finally, commit changes to save the workflow in the repository
 
+The workflow should run when new changes are pushed and check for instances if the application or project is at risk of malfunctions or bugs.
 
  ![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/dc6075d2-ce7d-402a-9061-f98058b09d12)
-
 
 </details>
 
@@ -344,6 +349,15 @@ When the notebook cells with the <b>assert</b> keyword run successfully, the tes
 
  <summary> Explanation </summary>
 
+VS Code is solely used for the project due to applicable experience in development and the VS Code interface provide the following advantages:
+ - Community-supported plugins can be installed directly from the VS Code interface
+ - Identation are clearly visible
+ - Python environments can be switched easily at any time while developing the project
+ - VS Code allows for useful keyboard shortcuts, which includes:
+   - <b>Indent/Outdent</b>
+   - <b>Toggle Line Comment</b>
+   - <b>Duplicated Line Selection</b>
+ - Extensive/comprehensive errors and cell outputs are easier to read when provided the option to view outputs in a text editor or scrollable output text
 
 </details>
 
