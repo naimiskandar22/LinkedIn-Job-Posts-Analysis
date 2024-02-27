@@ -169,7 +169,7 @@ The main terminologies and the description in the project are as follows:
 Sonarcloud is used to review code when new changes are pushed into the repository. Upon connecting the Github repository to the Sonarcloud platform, Sonarcloud can measure the code cleanliness and indicate the code quality throughout the project lifecycle. Observe the screenshot below for the indicated metrics on Sonarcloud. The metrics are as follows:
 - Reliability: Showing the number of bugs in the code
 - Security: Showing vulnerabilities in the code
-- Maintainability: Showing that technical debt ratio in the code
+- Maintainability: Showing technical debt ratio in the code
 - Duplications: Showing number of identical lines of code
 
 ![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/a882fbf6-2038-40c8-ba26-d8f6d6af2eec)
