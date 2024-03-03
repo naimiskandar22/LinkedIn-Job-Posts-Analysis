@@ -291,19 +291,26 @@ When the notebook cells with the <b>assert</b> keyword run successfully, the tes
 
 <details>
   <summary> Unit Test Example #1 </summary>
- 
- 
+  - Link to code snippet: https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/blob/33377c8f28eab1156e8975bb364dcd7b1ba716c4/jobs_analysis_test.ipynb#L1762-L1763
+
+  ![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/fd529f0a-ab9d-4da8-a5c5-8c377e2264a4)
+  
 </details>
 
 <details>
   <summary> Unit Test Example #2 </summary>
- 
+  - Link to code snippet: https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/blob/33377c8f28eab1156e8975bb364dcd7b1ba716c4/jobs_analysis_test.ipynb#L1798
+
+  ![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/0f78988f-43c9-43e3-b89f-9db8833519db)
+
  
 </details>
 
 <details>
   <summary> Unit Test Example #3 </summary>
- 
+  - Link to code snippet: https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/blob/33377c8f28eab1156e8975bb364dcd7b1ba716c4/jobs_analysis_test.ipynb#L1834
+
+  ![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/b331e6bf-96ab-4f54-91f6-32c3faaa2980)
  
 </details>
 
