@@ -260,7 +260,8 @@ The main terminologies and the description in the project are as follows:
 
  <summary> Event Storming </summary>
 
-![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/9e7ef1f7-f786-4fa4-8f05-b2b6cb3a3b68)
+![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/c14ef656-08a9-4e1b-a0b2-3b16424b2096)
+
 
 -----
 
@@ -270,7 +271,7 @@ The main terminologies and the description in the project are as follows:
 
  <summary> User Journey Flow </summary>
 
-![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/416bc760-0ed2-417c-b3de-b3aeed19a738)
+![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/256e9cb9-ef8a-4a64-92f9-2e5b5b94b4dd)
 
 -----
 
