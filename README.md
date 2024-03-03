@@ -61,10 +61,12 @@ As stated in the one of the challenges, LinkedIn takes measures to make web scra
 
 The information can be gathered for the following entities and stored in dataframes. Refer to the code snippets below for the domains used in this project:
 
+### Domains and Entities
+
 <details>
  <summary>1. Source platform (LinkedIn)</summary>
  
- - Link to class in Python: https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/blob/4e6ebe6297f3967b9ee57b96fd8f4b9a3906fed4/jobs_analysis.ipynb#L9029
+ - Link to class in Python: code snippet[https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/blob/4e6ebe6297f3967b9ee57b96fd8f4b9a3906fed4/jobs_analysis.ipynb#L9029]
 
  Objects in class:
  - Job ID
@@ -86,7 +88,7 @@ The information can be gathered for the following entities and stored in datafra
 <details>
  <summary>2. Job Details</summary>
  
- - Link to class in Python: https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/blob/4e6ebe6297f3967b9ee57b96fd8f4b9a3906fed4/jobs_analysis.ipynb#L9029
+ - Link to class in Python: code snippet[https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/blob/4e6ebe6297f3967b9ee57b96fd8f4b9a3906fed4/jobs_analysis.ipynb#L9029]
 
  Objects in class:
  - Job title
@@ -116,7 +118,7 @@ The information can be gathered for the following entities and stored in datafra
 <details>
  <summary>3. Company</summary>
  
- - Link to class in Python: https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/blob/4e6ebe6297f3967b9ee57b96fd8f4b9a3906fed4/jobs_analysis.ipynb#L9067
+ - Link to class in Python: code snippet[https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/blob/4e6ebe6297f3967b9ee57b96fd8f4b9a3906fed4/jobs_analysis.ipynb#L9067]
 
  Objects in class:
  - Company name
@@ -136,6 +138,27 @@ The information can be gathered for the following entities and stored in datafra
  
 </details>
 
+<details>
+ <summary>4. Required Skills (LinkedIn)</summary>
+ 
+ - Link to class in Python: code snippet[https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/blob/4e6ebe6297f3967b9ee57b96fd8f4b9a3906fed4/jobs_analysis.ipynb#L12562]
+
+ Objects in class:
+ - Job ID
+ - Post URL link
+ - Reposted
+ - List status
+ - Company ID
+
+<details>
+ <summary>Screenshots</summary>
+ 
+  ![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/2761a347-bb1a-495d-8c97-c2b9e9e7f16a)
+  ![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/3811b630-de81-4469-aea8-537df01c334f)
+
+</details>
+ 
+</details>
 
 </details>
 
