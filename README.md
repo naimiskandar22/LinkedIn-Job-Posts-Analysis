@@ -57,14 +57,35 @@ The domain model illustrates the entities relevant to the end-to-end process fro
 
 ![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/429ef382-a869-455f-b397-3d8971b9f888)
 
-As stated in the one of the challenges, LinkedIn takes measures to make web scraping difficult and inaccessible to web crawler agents. Nevertheless, Job posts on LinkedIn have similar patterns to how text information are shown and the text information can be obtained as long as the right serialized identification classes are determined. The information can be gathered for the following entities:
-1. Source platform (LinkedIn)
+As stated in the one of the challenges, LinkedIn takes measures to make web scraping difficult and inaccessible to web crawler agents. Nevertheless, Job posts on LinkedIn have similar patterns to how text information are shown and the text information can be obtained as long as the right serialized identification classes are determined. 
+
+The information can be gathered for the following entities and stored in dataframes. Refer to the code snippets below for the domains used in this project:
+
+<details>
+ <summary>1. Source platform (LinkedIn)</summary>
+ - Link to class in Python: https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/blob/4e6ebe6297f3967b9ee57b96fd8f4b9a3906fed4/jobs_analysis.ipynb#L9029
+
+ Objects in class:
  - Job ID
- - Post url link
+ - Post URL link
  - Reposted
  - List status
  - Company ID
-2. Job details
+
+<details>
+ <summary>Screenshots</summary>
+ ![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/dc2006ba-c7ff-4d4b-a9ef-3e32cd37f1f1)
+ ![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/bc0eb557-105b-4dbb-ad5d-520468306910)
+
+</details>
+ 
+</details>
+
+<details>
+ <summary>2. Job Details</summary>
+ - Link to class in Python: https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/blob/4e6ebe6297f3967b9ee57b96fd8f4b9a3906fed4/jobs_analysis.ipynb#L9029
+
+ Objects in class:
  - Job title
  - Job description
  - Language
@@ -73,12 +94,42 @@ As stated in the one of the challenges, LinkedIn takes measures to make web scra
  - Industry
  - Employment type
  - Associated skills
-3. Company
+ - Skill common phrases
+ - Unlisted skills
+ - Unlisted skill phrases
+
+<details>
+ <summary>Screenshots</summary>
+ ![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/5511b51c-434b-454a-a20f-5f4d6b67e3f3)
+ ![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/70c46a1c-85de-4a19-811d-c5def50841b4)
+ ![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/7b691ab1-024e-4886-a5f4-4aaa2ea72cdf)
+
+
+</details>
+ 
+</details>
+
+<details>
+ <summary>3. Company</summary>
+ - Link to class in Python: https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/blob/4e6ebe6297f3967b9ee57b96fd8f4b9a3906fed4/jobs_analysis.ipynb#L9067
+
+ Objects in class:
  - Company name
  - Company page link
  - Industry
  - Company size
  - Company description
+
+<details>
+ <summary>Screenshots</summary>
+ ![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/d493ac17-a949-4d80-ae48-4e2898e0373a)
+ ![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/3fe6071d-5a42-4fb1-bf9e-6012d0e94a6e)
+
+
+</details>
+ 
+</details>
+
 
 </details>
 
