@@ -49,6 +49,10 @@ UML Class Diagram
 
 ## Domain Driven Design (DDD)
 
+The purpose of the website application derives around an essential question: "What are the top 5-10 key information to include in my resume?"
+
+With a clearly defined user journey and defined systems, the application can be engineered to allow users access to that information within 5 minutes of navigating the website
+
 <details>
 
  <summary> Domain Model </summary>
@@ -66,7 +70,7 @@ The information can be gathered for the following entities and stored in datafra
 <details>
  <summary>1. Source platform (LinkedIn)</summary>
  
- - Link to class in Python: https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/blob/4e6ebe6297f3967b9ee57b96fd8f4b9a3906fed4/jobs_analysis.ipynb#L9029
+ - Link to class in Python: [code snippet](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/blob/4e6ebe6297f3967b9ee57b96fd8f4b9a3906fed4/jobs_analysis.ipynb#L9029)
 
  Objects in class:
  - Job ID
@@ -88,7 +92,7 @@ The information can be gathered for the following entities and stored in datafra
 <details>
  <summary>2. Job Details</summary>
  
- - Link to class in Python: https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/blob/4e6ebe6297f3967b9ee57b96fd8f4b9a3906fed4/jobs_analysis.ipynb#L9029
+ - Link to class in Python: [code snippet](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/blob/4e6ebe6297f3967b9ee57b96fd8f4b9a3906fed4/jobs_analysis.ipynb#L9029)
 
  Objects in class:
  - Job title
@@ -120,7 +124,7 @@ The information can be gathered for the following entities and stored in datafra
 <details>
  <summary>3. Company</summary>
  
- - Link to class in Python: https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/blob/4e6ebe6297f3967b9ee57b96fd8f4b9a3906fed4/jobs_analysis.ipynb#L9067
+ - Link to class in Python: [code snippet](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/blob/4e6ebe6297f3967b9ee57b96fd8f4b9a3906fed4/jobs_analysis.ipynb#L9067)
 
  Objects in class:
  - Company name
@@ -145,7 +149,7 @@ The information can be gathered for the following entities and stored in datafra
 <details>
  <summary>4. Required Skills (LinkedIn)</summary>
  
- - Link to class in Python: https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/blob/4e6ebe6297f3967b9ee57b96fd8f4b9a3906fed4/jobs_analysis.ipynb#L12562
+ - Link to class in Python: [code snippet](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/blob/4e6ebe6297f3967b9ee57b96fd8f4b9a3906fed4/jobs_analysis.ipynb#L12562)
 
  Objects in class:
  - Job ID
@@ -256,18 +260,17 @@ The main terminologies and the description in the project are as follows:
 
  <summary> Event Storming </summary>
 
-In the Domain-Driven Design process, ubiquitous language helps to align the relevant individuals in getting familiarized with the common terminologies used for the project development and getting a common understanding on the terminologies used in the project lifecycle.
+![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/9e7ef1f7-f786-4fa4-8f05-b2b6cb3a3b68)
 
-The main terminologies and the description in the project are as follows:
-- <b>Home Page</b>: Front page of the website where the insights are shown
-- <b>Job Posts Page</b>: Second page of the website that shows the list of job posts gathered on LinkedIn
-- <b>Top Job Title</b>: 3 most common job titles in the analysis output
-- <b>Top Companies</b>: 3 most common companies in the analysis output
-- <b>Top Industries</b>: 3 most common industries in the analysis output
-- <b>Top Experience Levels</b>: 3 most common experience levels in the analysis output
-- <b>Top Skills</b>: 3 most common associated skills to the jobs in the analysis output
-- <b>Remote Work Options</b>: Remote options in the LinkedIn filter options. The listed options found on LinkedIn are On-site, Hybrid and Remote
-- <b>Experience Levels</b>: Assigned experience level for the job posts on LinkedIn and is among one of the filter parameters. The listed experience levels found on LinkedIn include Entry level, Mid-Senior level, Internship, Contract, Part-time and Director
+-----
+
+</details>
+
+<details>
+
+ <summary> User Journey Flow </summary>
+
+![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/416bc760-0ed2-417c-b3de-b3aeed19a738)
 
 -----
 
@@ -377,6 +380,7 @@ Find the examples of clean code development below.
 
 </details>
 
+-----
 </details>
 
 ## Build Management System
@@ -404,7 +408,7 @@ When the notebook cells with the <b>assert</b> keyword run successfully, the tes
 
 <details>
   <summary> Unit Test Example #1 </summary>
-  - Link to code snippet: https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/blob/33377c8f28eab1156e8975bb364dcd7b1ba716c4/jobs_analysis_test.ipynb#L1762-L1763
+  - Link to code snippet: [code snippet](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/blob/33377c8f28eab1156e8975bb364dcd7b1ba716c4/jobs_analysis_test.ipynb#L1762-L1763)
 
   ![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/fd529f0a-ab9d-4da8-a5c5-8c377e2264a4)
   
@@ -412,7 +416,7 @@ When the notebook cells with the <b>assert</b> keyword run successfully, the tes
 
 <details>
   <summary> Unit Test Example #2 </summary>
-  - Link to code snippet: https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/blob/33377c8f28eab1156e8975bb364dcd7b1ba716c4/jobs_analysis_test.ipynb#L1798
+  - Link to code snippet: [code snippet](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/blob/33377c8f28eab1156e8975bb364dcd7b1ba716c4/jobs_analysis_test.ipynb#L1798)
 
   ![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/0f78988f-43c9-43e3-b89f-9db8833519db)
 
@@ -421,7 +425,7 @@ When the notebook cells with the <b>assert</b> keyword run successfully, the tes
 
 <details>
   <summary> Unit Test Example #3 </summary>
-  - Link to code snippet: https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/blob/33377c8f28eab1156e8975bb364dcd7b1ba716c4/jobs_analysis_test.ipynb#L1834
+  - Link to code snippet: [code snippet](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/blob/33377c8f28eab1156e8975bb364dcd7b1ba716c4/jobs_analysis_test.ipynb#L1834)
 
   ![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/b331e6bf-96ab-4f54-91f6-32c3faaa2980)
  
