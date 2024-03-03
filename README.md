@@ -289,6 +289,23 @@ When the notebook cells with the <b>assert</b> keyword run successfully, the tes
 
 ![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/0090c8b6-6a59-4bdc-b32a-3771e94bbda9)
 
+<details>
+  <summary> Unit Test Example #1 </summary>
+ 
+ 
+</details>
+
+<details>
+  <summary> Unit Test Example #2 </summary>
+ 
+ 
+</details>
+
+<details>
+  <summary> Unit Test Example #3 </summary>
+ 
+ 
+</details>
 
 </details>
 
