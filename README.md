@@ -94,6 +94,7 @@ The information can be gathered for the following entities and stored in datafra
  - Job title
  - Job description
  - Language
+ - Top Card Details
  - Experience level
  - Location
  - Industry
@@ -107,8 +108,9 @@ The information can be gathered for the following entities and stored in datafra
  <summary>Screenshots</summary>
  
  ![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/5511b51c-434b-454a-a20f-5f4d6b67e3f3)
-  ![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/70c46a1c-85de-4a19-811d-c5def50841b4)
-  ![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/7b691ab1-024e-4886-a5f4-4aaa2ea72cdf)
+ ![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/8c1c3d65-779f-4b8a-977d-1f86d835bed7)
+ ![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/70c46a1c-85de-4a19-811d-c5def50841b4)
+ ![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/7b691ab1-024e-4886-a5f4-4aaa2ea72cdf)
 
 
 </details>
@@ -123,6 +125,7 @@ The information can be gathered for the following entities and stored in datafra
  Objects in class:
  - Company name
  - Company page link
+ - Company Top Card Details
  - Industry
  - Company size
  - Company description
@@ -131,6 +134,7 @@ The information can be gathered for the following entities and stored in datafra
  <summary>Screenshots</summary>
  
   ![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/d493ac17-a949-4d80-ae48-4e2898e0373a)
+  ![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/d65ad9a0-b198-459d-bb0f-dd3361877677)
   ![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/3fe6071d-5a42-4fb1-bf9e-6012d0e94a6e)
 
 
@@ -177,6 +181,8 @@ As shown in the website gallery above, the website front page indicates the most
 - Tailoring their resumes for specialized positions
 - Determining the next skills to develop for senior positions
 
+-----
+
 </details>
 
 <details>
@@ -220,6 +226,7 @@ Future expansions can be considered to provide higher value for the website. How
    - Advantage: Broader data can be obtained automatically for long-term period with minimal manual process
    - Disadvantage: LinkedIn has intuitive countermeasures to prevent suspected web crawlers or robots from fetching data on the platform, and there is no job posts API available to free users
 
+-----
 
 </details>
 
@@ -239,6 +246,8 @@ The main terminologies and the description in the project are as follows:
 - <b>Top Skills</b>: 3 most common associated skills to the jobs in the analysis output
 - <b>Remote Work Options</b>: Remote options in the LinkedIn filter options. The listed options found on LinkedIn are On-site, Hybrid and Remote
 - <b>Experience Levels</b>: Assigned experience level for the job posts on LinkedIn and is among one of the filter parameters. The listed experience levels found on LinkedIn include Entry level, Mid-Senior level, Internship, Contract, Part-time and Director
+
+-----
 
 </details>
 
