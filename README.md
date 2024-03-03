@@ -237,6 +237,28 @@ Future expansions can be considered to provide higher value for the website. How
 In the Domain-Driven Design process, ubiquitous language helps to align the relevant individuals in getting familiarized with the common terminologies used for the project development and getting a common understanding on the terminologies used in the project lifecycle.
 
 The main terminologies and the description in the project are as follows:
+- <b>Jobs</b>: Jobs or job details that are publicly shown on LinkedIn job posts. The details are described as one of the domains above, and the objects that are available to be used
+- <b>Home Page</b>: Front page of the website where the insights are shown
+- <b>Job Posts Page</b>: Second page of the website that shows the list of job posts gathered on LinkedIn
+- <b>Top Job Title</b>: 3 most common job titles in the analysis output
+- <b>Top Companies</b>: 3 most common companies in the analysis output
+- <b>Top Industries</b>: 3 most common industries in the analysis output
+- <b>Top Experience Levels</b>: 3 most common experience levels in the analysis output
+- <b>Top Skills</b>: 3 most common associated skills to the jobs in the analysis output
+- <b>Remote Work Options</b>: Remote options in the LinkedIn filter options. The listed options found on LinkedIn are On-site, Hybrid and Remote
+- <b>Experience Levels</b>: Assigned experience level for the job posts on LinkedIn and is among one of the filter parameters. The listed experience levels found on LinkedIn include Entry level, Mid-Senior level, Internship, Contract, Part-time and Director
+
+-----
+
+</details>
+
+<details>
+
+ <summary> Event Storming </summary>
+
+In the Domain-Driven Design process, ubiquitous language helps to align the relevant individuals in getting familiarized with the common terminologies used for the project development and getting a common understanding on the terminologies used in the project lifecycle.
+
+The main terminologies and the description in the project are as follows:
 - <b>Home Page</b>: Front page of the website where the insights are shown
 - <b>Job Posts Page</b>: Second page of the website that shows the list of job posts gathered on LinkedIn
 - <b>Top Job Title</b>: 3 most common job titles in the analysis output
@@ -304,7 +326,7 @@ Find the examples of clean code development below.
 
  - Use case: Including comments to describe functions
  - Source file: job_analysis.ipynb
- - Path to file: [jobs_analysis.ipynb](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/blob/bd5edd41bcacc07cbea49b43f769ee8b1591db1e/jobs_analysis.ipynb)
+ - Link to code: [code snippet](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/blob/4e6ebe6297f3967b9ee57b96fd8f4b9a3906fed4/jobs_analysis.ipynb#L113)
 
 ![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/e84c78bc-2c25-4bc2-893d-3f22c9d52731)
 
@@ -316,7 +338,7 @@ Find the examples of clean code development below.
 
  - Use case: Naming convention of functions (Pascal Case)
  - Source file: job_analysis.ipynb
- - Path to file: [jobs_analysis.ipynb](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/blob/bd5edd41bcacc07cbea49b43f769ee8b1591db1e/jobs_analysis.ipynb)
+ - Path to file: [code snippet](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/blob/4e6ebe6297f3967b9ee57b96fd8f4b9a3906fed4/jobs_analysis.ipynb#L317)
 
  ![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/e84c78bc-2c25-4bc2-893d-3f22c9d52731)
 
@@ -327,7 +349,7 @@ Find the examples of clean code development below.
  
   - Use case: Naming convention of list and dataframe (Snake Case)
   - Source file: job_analysis.ipynb
-  - Path to file: [jobs_analysis.ipynb](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/blob/bd5edd41bcacc07cbea49b43f769ee8b1591db1e/jobs_analysis.ipynb)
+  - Path to file: [code snippet](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/blob/4e6ebe6297f3967b9ee57b96fd8f4b9a3906fed4/jobs_analysis.ipynb#L11916)
 
  ![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/8322c6be-4bd3-498d-9ae7-32d1c1ce16f5)
  
@@ -338,7 +360,7 @@ Find the examples of clean code development below.
  
   - Use case: Functional programming, where a function is defined with parameters and returning value(s). If the attempt to get value(s) is unsuccessful, return null and the rest of the code still persists
   - Source file: job_analysis.ipynb
-  - Path to file: [jobs_analysis.ipynb](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/blob/bd5edd41bcacc07cbea49b43f769ee8b1591db1e/jobs_analysis.ipynb)
+  - Path to file: [code snippet](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/blob/4e6ebe6297f3967b9ee57b96fd8f4b9a3906fed4/jobs_analysis.ipynb#L120)
 
  ![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/67c56a80-62df-4dac-b966-9e9d51fb9ff6)
 
@@ -349,7 +371,7 @@ Find the examples of clean code development below.
  
   - Use case: List and dataframe variables are given unique namings. Besides that, the namings are concise and appropriate to the specific purposes.
   - Source file: job_analysis.ipynb
-  - Path to file: [jobs_analysis.ipynb](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/blob/bd5edd41bcacc07cbea49b43f769ee8b1591db1e/jobs_analysis.ipynb)
+  - Path to file: [code snippet](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/blob/4e6ebe6297f3967b9ee57b96fd8f4b9a3906fed4/jobs_analysis.ipynb#L9020)
 
  ![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/e4e4ef75-2a34-470a-84fa-990fe89b9f88)
 
