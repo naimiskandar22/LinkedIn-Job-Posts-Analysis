@@ -63,6 +63,7 @@ The information can be gathered for the following entities and stored in datafra
 
 <details>
  <summary>1. Source platform (LinkedIn)</summary>
+ 
  - Link to class in Python: https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/blob/4e6ebe6297f3967b9ee57b96fd8f4b9a3906fed4/jobs_analysis.ipynb#L9029
 
  Objects in class:
@@ -74,6 +75,7 @@ The information can be gathered for the following entities and stored in datafra
 
 <details>
  <summary>Screenshots</summary>
+ 
   ![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/dc2006ba-c7ff-4d4b-a9ef-3e32cd37f1f1)
   ![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/bc0eb557-105b-4dbb-ad5d-520468306910)
 
@@ -83,6 +85,7 @@ The information can be gathered for the following entities and stored in datafra
 
 <details>
  <summary>2. Job Details</summary>
+ 
  - Link to class in Python: https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/blob/4e6ebe6297f3967b9ee57b96fd8f4b9a3906fed4/jobs_analysis.ipynb#L9029
 
  Objects in class:
@@ -100,7 +103,8 @@ The information can be gathered for the following entities and stored in datafra
 
 <details>
  <summary>Screenshots</summary>
-  ![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/5511b51c-434b-454a-a20f-5f4d6b67e3f3)
+ 
+ ![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/5511b51c-434b-454a-a20f-5f4d6b67e3f3)
   ![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/70c46a1c-85de-4a19-811d-c5def50841b4)
   ![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/7b691ab1-024e-4886-a5f4-4aaa2ea72cdf)
 
@@ -111,6 +115,7 @@ The information can be gathered for the following entities and stored in datafra
 
 <details>
  <summary>3. Company</summary>
+ 
  - Link to class in Python: https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/blob/4e6ebe6297f3967b9ee57b96fd8f4b9a3906fed4/jobs_analysis.ipynb#L9067
 
  Objects in class:
@@ -122,6 +127,7 @@ The information can be gathered for the following entities and stored in datafra
 
 <details>
  <summary>Screenshots</summary>
+ 
   ![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/d493ac17-a949-4d80-ae48-4e2898e0373a)
   ![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/3fe6071d-5a42-4fb1-bf9e-6012d0e94a6e)
 
