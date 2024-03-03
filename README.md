@@ -66,7 +66,7 @@ The information can be gathered for the following entities and stored in datafra
 <details>
  <summary>1. Source platform (LinkedIn)</summary>
  
- - Link to class in Python: code snippet[https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/blob/4e6ebe6297f3967b9ee57b96fd8f4b9a3906fed4/jobs_analysis.ipynb#L9029]
+ - Link to class in Python: https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/blob/4e6ebe6297f3967b9ee57b96fd8f4b9a3906fed4/jobs_analysis.ipynb#L9029
 
  Objects in class:
  - Job ID
@@ -88,7 +88,7 @@ The information can be gathered for the following entities and stored in datafra
 <details>
  <summary>2. Job Details</summary>
  
- - Link to class in Python: code snippet[https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/blob/4e6ebe6297f3967b9ee57b96fd8f4b9a3906fed4/jobs_analysis.ipynb#L9029]
+ - Link to class in Python: https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/blob/4e6ebe6297f3967b9ee57b96fd8f4b9a3906fed4/jobs_analysis.ipynb#L9029
 
  Objects in class:
  - Job title
@@ -118,7 +118,7 @@ The information can be gathered for the following entities and stored in datafra
 <details>
  <summary>3. Company</summary>
  
- - Link to class in Python: code snippet[https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/blob/4e6ebe6297f3967b9ee57b96fd8f4b9a3906fed4/jobs_analysis.ipynb#L9067]
+ - Link to class in Python: https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/blob/4e6ebe6297f3967b9ee57b96fd8f4b9a3906fed4/jobs_analysis.ipynb#L9067
 
  Objects in class:
  - Company name
@@ -141,7 +141,7 @@ The information can be gathered for the following entities and stored in datafra
 <details>
  <summary>4. Required Skills (LinkedIn)</summary>
  
- - Link to class in Python: code snippet[https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/blob/4e6ebe6297f3967b9ee57b96fd8f4b9a3906fed4/jobs_analysis.ipynb#L12562]
+ - Link to class in Python: https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/blob/4e6ebe6297f3967b9ee57b96fd8f4b9a3906fed4/jobs_analysis.ipynb#L12562
 
  Objects in class:
  - Job ID
