@@ -390,12 +390,22 @@ Find the examples of clean code development below.
 
 ## Build Management System
 
+Github Action provide pre-built workflows that facilitates build management, testing and code reviews automatically.
+
 <details>
 
- <summary> Metrics </summary>
+ <summary> Explanation </summary>
+#### Build Management with Github Action
 
+In this project, a workflow ([link here](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/blob/main/.github/workflows/python-app.yml)) has been configured to run tests and review the build when new changes are pushed into the repository by running the following processes virtually:
+- Set up Python version 3.9.13
+- Install dependencies from requirements.txt file
+- Run Python Lint to detect semantic and stylistic problems in the code
+- Run the Jupyter notebook test file [link here](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/blob/main/jobs_analysis_test.ipynb)
 
+If the workflow runs successfully, then there are no problems in the code reviewed. If the workflow fails, then the test has failed and test logs are available to fix the vulnerabilities in the code. Refer to the screenshot below for the pre-built workflow used for this project. 
 
+![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/d287a3fc-f8c3-4766-aaba-9796af3d45a3)
 
 </details>
 
