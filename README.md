@@ -51,6 +51,10 @@ UML Class Diagram
 
 The purpose of the website application derives around an essential question: "What are the top 5-10 key information to include in my resume?"
 
+The average job seekers would commonly take advice from peers, whom they trust, in an effort to gain the best chances in getting the dream job. By knowing the common patterns in how job openings are advertised, key insights on the job market can be systematically attained.
+
+![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/936f876c-dd62-4fcc-8336-50a551deadf7)
+
 With a clearly defined user journey and defined systems, the application can be engineered to allow users access to that information within 5 minutes of navigating the website
 
 <details>
