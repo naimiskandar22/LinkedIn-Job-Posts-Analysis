@@ -40,7 +40,7 @@
 
 
 UML Use Case Diagram
-![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/c565c5cd-e135-49e6-9145-c67f319c7d08)
+![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/e57d1c4f-5f76-49cb-88db-c77de9c7b682)
 
 UML Class Diagram
 ![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/9632c844-9645-4dd4-a9b9-10def5806eed)
