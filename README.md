@@ -550,20 +550,35 @@ Refer to the screenshots below for the defined dataframes to be stored in excel 
 <details>
  <summary> Functional Programming Practices </summary>
 
-### Functions
-Functions are defined and used in the project to reduce repetitive code lines that would be harder to maintain in a live project
+ <details>
+ <summary>Functions</summary>
+  
+ Functions are defined and used in the project to reduce repetitive code lines that would be harder to maintain in a live project
+ 
+ ![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/67c56a80-62df-4dac-b966-9e9d51fb9ff6)
+ </details>
 
-![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/67c56a80-62df-4dac-b966-9e9d51fb9ff6)
+<details>
+ 
+<summary>No Side Effects</summary>
 
-### No Side Effects
 The project has little to no error tolerance, hence efforts in preventing programmatical issues are prioritized. One measure to prevent side effects would be to return null values from defined functions and every function would return values
+</details>
 
-### Higher Order Functions
+<details>
+ 
+<summary>Higher Order Functions</summary>
+
 Functions with parameters are defined and as explained in the <b>Clean Code Development - General Practice<b> section, functions serve specific purposes in the project. Moreover, variables are passed as parameters for the defined functions and no functions would use global variables.
 
 ![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/e4e4ef75-2a34-470a-84fa-990fe89b9f88)
+</details>
 
-### No Global Variable
+<details>
+ 
+<summary>No Global Variables</summary>
+
 Global variables are not instantiated in the project. At the very least, functions in the project would not use global variables unless the variables as passed as parameters when calling the functions.
+</details>
 
 </details>
