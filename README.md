@@ -519,6 +519,7 @@ The workflow should run when new changes are pushed and check for instances if t
    - <b>Duplicated Line Selection</b>
  - Extensive/comprehensive errors and cell outputs are easier to read when provided the option to view outputs in a text editor or scrollable output text
 
+Link to VS Code Windows keyboard shortcut cheat sheet: [cheat sheet](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf)
 </details>
 
 
