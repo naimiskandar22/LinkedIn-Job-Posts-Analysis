@@ -508,7 +508,7 @@ The workflow should run when new changes are pushed and check for instances if t
 
 <b>VS Code</b> is solely used for the project due to applicable experience in development and the VS Code interface provide the following advantages:
  - Community-supported plugins can be installed directly from the VS Code interface
- - Identation are clearly visible
+ - Indentations are clearly visible
  - Python environments can be switched easily at any time while developing the project
  - VS Code allows for useful keyboard shortcuts, which includes:
    - <b>Indent/Outdent</b>
@@ -519,12 +519,16 @@ The workflow should run when new changes are pushed and check for instances if t
 </details>
 
 
-## DSL
+## Domain Specified Language (DSL)
 
 <details>
 
  <summary> Explanation </summary>
-
+ As detailed in the Domain Driven Design (DDD) section, the relevant terminology are listed and defined for the classes used in the project. The terms used in the process adheres to the classes or entities for implementation. Those domains include:
+ - Source platform (LinkedIn)
+ - Job details
+ - Company
+ - Required skills
 
 </details>
 
@@ -551,7 +555,9 @@ Refer to the screenshots below for the defined dataframes to be stored in excel 
  <summary> Functional Programming Practices </summary>
 
  <details>
- <summary>Functions</summary>
+ <summary>1. Functions</summary>
+  - Source file: job_analysis.ipynb
+  - Path to file: [code snippet](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/blob/4e6ebe6297f3967b9ee57b96fd8f4b9a3906fed4/jobs_analysis.ipynb#L120)
   
  Functions are defined and used in the project to reduce repetitive code lines that would be harder to maintain in a live project
  
@@ -560,14 +566,14 @@ Refer to the screenshots below for the defined dataframes to be stored in excel 
 
 <details>
  
-<summary>No Side Effects</summary>
+<summary>2. No Side Effects</summary>
 
 The project has little to no error tolerance, hence efforts in preventing programmatical issues are prioritized. One measure to prevent side effects would be to return null values from defined functions and every function would return values
 </details>
 
 <details>
  
-<summary>Higher Order Functions</summary>
+<summary>3. Higher Order Functions</summary>
 
 Functions with parameters are defined and as explained in the <b>Clean Code Development - General Practice<b> section, functions serve specific purposes in the project. Moreover, variables are passed as parameters for the defined functions and no functions would use global variables.
 
@@ -576,7 +582,7 @@ Functions with parameters are defined and as explained in the <b>Clean Code Deve
 
 <details>
  
-<summary>No Global Variables</summary>
+<summary>4. No Global Variables</summary>
 
 Global variables are not instantiated in the project. At the very least, functions in the project would not use global variables unless the variables as passed as parameters when calling the functions.
 </details>
