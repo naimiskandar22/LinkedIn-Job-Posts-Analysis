@@ -495,7 +495,7 @@ The workflow should run when new changes are pushed and check for instances if t
 
  <summary> Explanation </summary>
 
-VS Code is solely used for the project due to applicable experience in development and the VS Code interface provide the following advantages:
+<b>VS Code</b> is solely used for the project due to applicable experience in development and the VS Code interface provide the following advantages:
  - Community-supported plugins can be installed directly from the VS Code interface
  - Identation are clearly visible
  - Python environments can be switched easily at any time while developing the project
