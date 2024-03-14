@@ -40,12 +40,15 @@
 
 
 UML Use Case Diagram
+
 ![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/e57d1c4f-5f76-49cb-88db-c77de9c7b682)
 
 UML Class Diagram
+
 ![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/aa8bc2cf-0636-432c-a001-71e8aaa8e6a7)
 
 Activity Diagram
+
 ![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/376858ec-2f66-4385-a881-38757f62b92e)
 
 </details>
