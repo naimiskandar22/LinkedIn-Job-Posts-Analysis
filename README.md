@@ -395,7 +395,7 @@ Github Action provide pre-built workflows that facilitates build management, tes
 <details>
 
  <summary> Explanation </summary>
-#### Build Management with Github Action
+### Build Management with Github Action
 
 In this project, a workflow ([link here](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/blob/main/.github/workflows/python-app.yml)) has been configured to run tests and review the build when new changes are pushed into the repository by running the following processes virtually:
 - Set up Python version 3.9.13
