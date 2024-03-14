@@ -195,9 +195,9 @@ As shown in the website gallery above, the website front page indicates the most
 
 The core purpose of the website is to provide valuable information on the demanded job options on the market and democratize the feature to be available to the data community
 
-![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/aa99903c-d398-4896-8d20-8a24bdf62da2)
+![image](https://github.com/naimiskandar22/LinkedIn-Job-Posts-Analysis/assets/29110245/77b362e2-c74e-4b70-87dd-bdcf160a177d)
 
-The feature to display the insights mentioned multiple times on a published website is the determined minimum-viable product (MVP), however the website utilization and application lies on the exploratory data analysis processes that produces the insight shown. The exploratory data analysis processes include:
+The #1 feature is the determined as the minimum-viable product (MVP), however the website utilization and application lies on the exploratory data analysis processes that produces the insight shown. The exploratory data analysis processes include:
 - Most common job titles
 - Companies with the most job posts
 - Top Industries from the job posts
