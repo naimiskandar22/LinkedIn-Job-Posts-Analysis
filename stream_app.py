@@ -1,7 +1,9 @@
 import pandas as pd
+import numpy as np
 import json
 import time
 import datetime
+from datetime import timedelta
 
 # Python3 program to Grouping list 
 # elements based on frequency
@@ -20,6 +22,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 import plotly.express as px 
 import matplotlib.pyplot as plt
+import plotly.graph_objects as go
 # from wordcloud import WordCloud, STOPWORDS, ImageColorGenerator
 
 import streamlit as st 
@@ -44,8 +47,8 @@ pills_job_title = ''
 pills_job_skills = ''
 
 
-tfidf = TfidfVectorizer(stop_words='english')
-feature = tfidf.fit_transform(df_jobs['translated_en'])
+# tfidf = TfidfVectorizer(stop_words='english')
+# feature = tfidf.fit_transform(df_jobs['translated_en'])
 
 def find_similar_jobs(filtered_df, search_text):
     if search_text.strip() == '':
@@ -157,37 +160,37 @@ def show_text_card(label = '', font_size = '18px', alignment = 'left', color = '
 st.title(":compass: What-The-Job App")
 st.markdown("##")
 
-about_title_label = 'About'
-about_title_color = 'grey'
-about_title_font_size = '28px'
-about_title_font_weight = 'bold' 
-
-about_title_display = f'''
-        <p style="color:{about_title_color}; font-size: {about_title_font_size}; font-weight: {about_title_font_weight}; text-decoration:none;">{about_title_label}</p>
-    '''
-
-about_color = 'grey'
-about_font_size = '28px'
-about_font_weight = 'bold' 
-about_label_header = '''
-            Ever wondered what skills are in demand for your dream role? Or maybe, you want to future-proof your career by getting upskilled for the next big role.
-            '''
-about_label = '''
-            This app aims to help find the top skills that are needed for the dream job and leverage the takeaway to update resumes when it's time to make the career leap.\n
-            '''
-
-instruction_label_header = '''
-                    How to use the app
-                    '''
-instruction_label = '''
-                    1. Enter a key phrase to find a particular job
-                    '''
-
+# About page
 with st.expander(label='''
                  -- About                                                                     -
                  ''', expanded=False):
-    # about_col1, about_col2 = st.columns(2)
-    # with about_col1:
+    
+    about_title_label = 'About'
+    about_title_color = 'grey'
+    about_title_font_size = '28px'
+    about_title_font_weight = 'bold' 
+
+    about_title_display = f'''
+            <p style="color:{about_title_color}; font-size: {about_title_font_size}; font-weight: {about_title_font_weight}; text-decoration:none;">{about_title_label}</p>
+        '''
+
+    about_color = 'grey'
+    about_font_size = '28px'
+    about_font_weight = 'bold' 
+    about_label_header = '''
+                Ever wondered what skills are in demand for your dream role? Or maybe, you want to future-proof your career by getting upskilled for the next big role.
+                '''
+    about_label = '''
+                This app aims to help find the top skills that are needed for the dream job and leverage the takeaway to update resumes when it's time to make the career leap.\n
+                '''
+
+    instruction_label_header = '''
+                        How to use the app
+                        '''
+    instruction_label = '''
+                        1. Enter a key phrase to find a particular job
+                        '''
+    
     st.markdown(show_text_card(label = about_label_header, font_weight='bold', font_size='20px'), unsafe_allow_html=True)
     # st.markdown('##')
     st.markdown(show_text_card(label = about_label, font_weight='normal', font_size='14px'), unsafe_allow_html=True)
@@ -227,8 +230,8 @@ st.markdown("##")
 # horizontal menu
 # get icons at Bootstap Icons:  https://icons.getbootstrap.com/
 selected_menu = option_menu(menu_title = None,
-                            options = ["Home", "Job Posts"],
-                            icons = ['house', 'bookmark-star-fill'],
+                            options = ["Home", "Job Posts", "Skillframe", "Salary"],
+                            icons = ['house', 'bookmark-star-fill', 'calendar-range-fill', 'cash-stack'],
                             menu_icon = 'cast',
                             default_index=0,
                             orientation='horizontal')
@@ -328,9 +331,6 @@ if selected_pills is not None:
         selected_jobs = selected_jobs[selected_jobs['Industry'] == selected_pills]
     elif selected_pills in common_skills:
         selected_jobs = selected_jobs[selected_pills in list(selected_jobs['Job Skills'].values)]
-# selected_jobs = selected_jobs.query(
-#     """`Job Country` in @location & `Job Title` in @job_title & `Company Name` in @company_name & `Work Setting` in @work_setting & `Experience Level` in @post_experience & `Post Language` in @post_language"""
-# )
 
 combined_listed_skill_lists = list(itertools.chain.from_iterable(selected_jobs['Job Skills'].values))
 listed_skills_grouped = list(zip(Counter(combined_listed_skill_lists).keys(), Counter(combined_listed_skill_lists).values()))
@@ -743,8 +743,10 @@ elif selected_menu == 'Job Posts':
                     topcard_display = f'<a href = {url}><p style="color:white; font-size: 14px; text-decoration:none; line-height:0.5">:link: Go to LinkedIn page</p></a>'
                     tile.markdown(topcard_display, unsafe_allow_html=True)
                 
+                date_post = selected_jobs_row["Post Date"]
+                if type(selected_jobs_row["Post Date"]) == float:
+                    date_post = datetime.datetime.fromtimestamp(selected_jobs_row["Post Date"]).strftime('%Y-%m-%d')
                 
-                date_post = datetime.datetime.fromtimestamp(selected_jobs_row["Post Date"]).strftime('%Y-%m-%d')
                 tile.markdown(show_text_card(label=("\n[Saved at: "+date_post+']'), color='white', font_size='12px', line_spacing=0.5), unsafe_allow_html=True)
 
                 
@@ -779,3 +781,283 @@ elif selected_menu == 'Job Posts':
                 # tile.markdown(change_link_color, unsafe_allow_html=True)
 
                 curr_card = curr_card + 1
+elif selected_menu == 'Skillframe':
+    st.title('Skills Over Time')
+    st.markdown('##')
+
+    # get icons at Bootstap Icons:  https://icons.getbootstrap.com/
+    skills_page_display = option_menu(menu_title = None,
+                            options = ["Demands", "Company", "Experience Level"],
+                            icons = ['1-square', '2-square', '3-square'],
+                            menu_icon = 'cast',
+                            default_index=0,
+                            orientation='horizontal')
+    
+    skillframe_col1, skillframe_col2, skillframe_col3, skillframe_col4 = st.columns(4)
+
+    demands_skillframe = []
+    company_skillframe = []
+    country_skillframe = []
+    experience_skillframe = []
+    duration_skillframe = ['All time', 'Last 1 year', 'Last 2 years']
+    selected_experience_skillframe = 0
+    selected_duration_skillframe = 0
+
+    
+    with skillframe_col1:
+        options = list(selected_jobs["Job Country"].unique())
+        options.insert(0, 'All')
+        country_skillframe = st.multiselect(
+            ":office: Company:",
+            options=options,
+            default=['All'],
+            key='country_skillframe_key'
+        )
+        if 'All' in country_skillframe:
+            country_skillframe = selected_jobs["Job Country"].unique()  
+
+    with skillframe_col2:
+        options = list(selected_jobs["Company Name"].unique())
+        options.insert(0, 'All')
+        company_skillframe = st.multiselect(
+            ":office: Company:",
+            options=options,
+            default=['All'],
+            key='company_skillframe_key'
+        )
+        if 'All' in company_skillframe:
+            company_skillframe = selected_jobs["Company Name"].unique()
+
+    with skillframe_col3:
+        options = [value for value in df_jobs["Experience Level"].unique() if pd.isna(value) == False]
+        options.insert(0, 'All')
+        experience_skillframe = st.selectbox(
+            ":star2: Experience:",
+            options=options,
+            index=0,
+            key='experience_skillframe_key'
+        )
+        if experience_skillframe == 'All':
+            experience_skillframe = selected_jobs["Experience Level"].unique()
+
+    with skillframe_col4:
+        options = ['All time', 'Last 1 year', 'Last 2 years']
+        duration_skillframe = st.selectbox(
+            ":calendar: Date:",
+            options=options,
+            index=0,
+            key='duration_skillframe_key'
+        )
+
+    skills_to_sort = df_top_skills.copy()
+    sorted_skill_labels = list(skills_to_sort.sort_values(by=['Total'], ascending = False)['Skill Name'])
+    options = sorted_skill_labels
+
+    if skills_page_display == 'Demands':
+        options.insert(0, 'All')
+        demands_skillframe = st.multiselect(
+            ":toolbox: Skills:",
+            options=options,
+            default=options[1:6]
+        )
+        if 'All' in demands_skillframe:
+            demands_skillframe = sorted_skill_labels
+    else:
+        demands_skillframe = st.selectbox(
+            ":toolbox: Skills:",
+            options=options,
+            index=0,
+            key='demands_skillframe_key'
+        )
+        demands_skillframe = [demands_skillframe]
+
+
+    # skillframe_page_jobs = selected_jobs.copy()
+    skillframe_page_jobs = selected_jobs.query(
+            """`Job Country` in @country_skillframe & `Company Name` in @company_skillframe & `Experience Level` in @experience_skillframe"""
+        )
+    
+    skillframe_start_date = None
+    
+    if duration_skillframe == 'All time':
+        skillframe_start_date = None
+    elif duration_skillframe == 'Last 1 year':
+        skillframe_start_date = datetime.date.today() - datetime.timedelta(days=365)
+    elif duration_skillframe == 'Last 2 years':
+        skillframe_start_date = datetime.date.today() - datetime.timedelta(days=730)
+
+    if skillframe_start_date is not None:
+        skillframe_page_jobs = skillframe_page_jobs[(skillframe_page_jobs['Post Date'] >= skillframe_start_date) & (skillframe_page_jobs['Post Date'] <= datetime.date.today())]
+    
+    skillframe_df1 = pd.DataFrame([
+        [p] + a for P, *a in skillframe_page_jobs[['All Skills', 'Job ID', 'Post Date', 'Company Name', 'Experience Level']].values
+        for p in P
+    ], columns=[['Skills', 'Job ID', 'Post Date', 'Company Name', 'Experience Level']])
+
+    skillframe_df1['YY-MM'] = skillframe_df1['Post Date']
+    skillframe_df1['Total'] = 1
+    for index in skillframe_df1.index:
+        job_row = skillframe_df1.loc[index]
+        date_post = job_row["Post Date"]
+        if type(date_post) == float:
+            date_post = datetime.datetime.fromtimestamp(date_post).strftime('%Y-%m-%d')
+        # job_row['Post Date'] = datetime.datetime.fromtimestamp(date_post).strftime('%Y-%m-%d')
+        date_post = datetime.datetime.strptime(date_post, '%Y-%m-%d').date()
+        job_row['Post Date'] = date_post
+        job_row['YY-MM'] = str(date_post)[:7]
+        skillframe_df1.loc[index] = job_row
+    skillframe_df1.reset_index()
+    skillframe_df1.columns = skillframe_df1.columns.get_level_values(0)
+    
+    skillframe_df_pivotted = None
+
+    # skillframe_df_pivotted = pd.pivot_table(skillframe_df1, values='Total', index=['YY-MM'], columns=['Company Name', 'Skills'], aggfunc=np.sum)
+    if skills_page_display == 'Demands':
+        skillframe_df_pivotted = pd.pivot_table(skillframe_df1, values='Total', index=['YY-MM'], columns='Skills', aggfunc=np.sum)
+        # skillframe_df_pivotted.columns = skillframe_df_pivotted.columns.get_level_values(1)
+        skillframe_df_pivotted = skillframe_df_pivotted[demands_skillframe]
+    elif skills_page_display == 'Company':
+        skillframe_df_pivotted = pd.pivot_table(skillframe_df1, values='Total', index=['YY-MM'], columns='Company Name', aggfunc=np.sum)
+        # skillframe_df_pivotted.columns = skillframe_df_pivotted.columns.get_level_values(0)
+        # skillframe_df_pivotted = skillframe_df_pivotted[demands_skillframe]
+    elif skills_page_display == 'Experience Level':
+        skillframe_df_pivotted = pd.pivot_table(skillframe_df1, values='Total', index=['YY-MM'], columns='Experience Level', aggfunc=np.sum)
+    
+    fig = go.Figure()
+    for col in skillframe_df_pivotted.columns:
+        fig.add_trace(go.Scatter(x=skillframe_df_pivotted.index, y=skillframe_df_pivotted[col].values,
+                                name = col,
+                                mode = 'markers+lines',
+                                line=dict(shape='linear'),
+                                connectgaps=True
+                                )
+                    )
+
+    st.plotly_chart(fig, use_container_width=True)
+
+elif selected_menu == 'Salary':
+    st.title('Pay Range')
+    st.markdown('##')
+
+    salary_col1, salary_col2, salary_col3, salary_col4 = st.columns(4)
+
+    demands_salary = []
+    company_salary = []
+    country_salary = []
+    experience_salary = []
+    duration_salary = ['All time', 'Last 1 year', 'Last 2 years']
+
+    with salary_col1:
+        options = list(selected_jobs[selected_jobs['Pay Salary'].notna()]["Job Country"].unique())
+        options.insert(0, 'All')
+        country_salary = st.multiselect(
+            ":globe_with_meridians: Country:",
+            options=options,
+            default=['All'],
+            key='country_salary_key'
+        )
+        if 'All' in country_salary:
+            country_salary = selected_jobs["Job Country"].unique()
+    
+    with salary_col2:
+        options = list(selected_jobs[selected_jobs['Pay Salary'].notna()]["Company Name"].unique())
+        options.insert(0, 'All')
+        company_salary = st.multiselect(
+            ":office: Company:",
+            options=options,
+            default=['All'],
+            key='company_salary_key'
+        )
+        if 'All' in company_salary:
+            company_salary = selected_jobs["Company Name"].unique()
+
+    with salary_col3:
+        options = [value for value in selected_jobs[selected_jobs['Pay Salary'].notna()]["Experience Level"].unique() if pd.isna(value) == False]
+        options.insert(0, 'All')
+        experience_salary = st.multiselect(
+            ":star2: Experience:",
+            options=options,
+            default=['All'],
+            key='experience_salary_key'
+        )
+        if 'All' in experience_salary:
+            experience_salary = selected_jobs["Experience Level"].unique()
+
+    with salary_col4:
+        options = ['All time', 'Last 1 year', 'Last 2 years']
+        selected_duration_salary = st.selectbox(
+            ":calendar: Date:",
+            options=options,
+            index=0,
+            key='duration_salary_key'
+        )
+
+    # salary_page_jobs = selected_jobs.copy()
+    salary_page_jobs = selected_jobs.query(
+            """`Job Country` in @country_salary & `Company Name` in @company_salary & `Experience Level` in @experience_salary"""
+        )
+    
+    salary_start_date = None
+    
+    if selected_duration_salary == 'All time':
+        salary_start_date = None
+    elif selected_duration_salary == 'Last 1 year':
+        salary_start_date = datetime.date.today() - datetime.timedelta(days=365)
+    elif selected_duration_salary == 'Last 2 years':
+        salary_start_date = datetime.date.today() - datetime.timedelta(days=730)
+
+    if salary_start_date is not None:
+        salary_page_jobs = salary_page_jobs[(salary_page_jobs['Post Date'] >= salary_start_date) & (salary_page_jobs['Post Date'] <= datetime.date.today())]
+
+    salary_df_columns = ['Job ID', 'Job Title', 'Company Name', 'Experience Level', 'Experience in Years', 'Pay Salary', 'Min (Range)', 'Max (Range)', 'AVG (Range)', 'Salary (Bucket)']
+    salary_df = pd.DataFrame([], columns = salary_df_columns)
+
+    for index in salary_page_jobs.index:
+        job_row = salary_page_jobs.loc[index]
+
+        if job_row['Pay Salary'] is None:
+            continue
+
+        salary_range_min = None
+        try:
+            salary_range_min = str(job_row['Pay Salary']).split(' - ')[0]
+            salary_range_min = float(str(salary_range_min).replace('/yr', ''))
+        except:
+            salary_range_min = None
+        
+        salary_range_max = None
+        try:
+            salary_range_max = str(job_row['Pay Salary']).split(' - ')[1]
+            salary_range_max = float(str(salary_range_max).replace('/yr', ''))
+        except:
+            salary_range_max = None
+
+        salary_dict = {}
+
+        salary_dict['Job ID'] = job_row["Job ID"]
+        salary_dict['Job Title'] = job_row["Job Title"]
+        salary_dict['Company Name'] = job_row["Company Name"]
+        salary_dict['Experience Level'] = job_row["Experience Level"]
+        salary_dict['Experience in Years'] = float(job_row["Experience in Years"])
+        salary_dict['Pay Salary'] = str(job_row["Pay Salary"])
+        salary_dict['Min (Range)'] = salary_range_min
+        salary_dict['Max (Range)'] = salary_range_max
+        salary_dict['AVG (Range)'] = np.average([value for value in [salary_range_min, salary_range_max] if value is not None])
+
+        if salary_range_min is None:
+            salary_dict['Salary (Bucket)'] = None
+            salary_df = pd.concat([salary_df, pd.DataFrame([salary_dict])], ignore_index=True)
+        elif salary_range_max is None:
+            salary_dict['Salary (Bucket)'] = salary_range_min
+            salary_df = pd.concat([salary_df, pd.DataFrame([salary_dict])], ignore_index=True)
+        elif salary_range_max is not None:
+            salary_interval = 10000
+            for interval_index in range(0, int((round(salary_range_max, -4)-round(salary_range_min, -4))/salary_interval)+1):
+                salary_dict['Salary (Bucket)'] = round(salary_range_min, -4) + salary_interval*interval_index
+                salary_df = pd.concat([salary_df, pd.DataFrame([salary_dict])], ignore_index=True)
+
+        salary_df.reset_index()
+
+    fig = go.Figure()
+    fig = px.histogram(salary_df, x="Salary (Bucket)", color = "Experience Level", barmode = "overlay")
+    st.plotly_chart(fig, use_container_width=True)

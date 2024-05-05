@@ -4,6 +4,7 @@ langdetect
 bs4
 lxml
 googletrans
+joblib
 httpcore
 httpx
 pymongo
